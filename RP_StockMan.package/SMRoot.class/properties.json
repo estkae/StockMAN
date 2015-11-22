@@ -1,0 +1,14 @@
+{
+	"category" : "RP_StockMan",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SMRoot",
+	"pools" : [
+		 ],
+	"super" : "WATask",
+	"type" : "normal" }

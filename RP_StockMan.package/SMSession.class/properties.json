@@ -1,0 +1,15 @@
+{
+	"category" : "RP_StockMan",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"glorpSession",
+		"user" ],
+	"name" : "SMSession",
+	"pools" : [
+		 ],
+	"super" : "WASession",
+	"type" : "normal" }

@@ -1,0 +1,17 @@
+{
+	"category" : "RP_StockMan",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"email",
+		"password",
+		"messageComponent",
+		"sha1" ],
+	"name" : "SMLogin",
+	"pools" : [
+		 ],
+	"super" : "WAComponent",
+	"type" : "normal" }

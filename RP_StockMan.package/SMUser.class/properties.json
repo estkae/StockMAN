@@ -1,0 +1,16 @@
+{
+	"category" : "RP_StockMan",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"username",
+		"email",
+		"password" ],
+	"name" : "SMUser",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
