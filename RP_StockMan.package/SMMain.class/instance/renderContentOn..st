@@ -1,48 +1,10 @@
 as yet unclassified
 renderContentOn: html
 	
+	"header line"
 	html div 
-		class: 'menu-marker';
-		with: [
-			html anchor 
-				id: 'showLeft';
-				class: 'menu';
-				script: (
-					( html jQuery this )
-					on: 'click'
-					do: (
-						( ( html jQuery id: 'cbp-spmenu-s1' ) addClass: 'cbp-spmenu-open' )
-					)
-				);
-				with: [ 
-					html span 
-						class: 'fa fa-bars fa-5x'
-				].		 
-		].
-
-	html div 
-		class: 'logout-marker';
-		with: [  
-			html anchor
-			callback: [ self session doLogout. ];
-			with: [ 
-				html span 
-					class: 'border-under';	
-					with: 'Logout'
-			]		
-		].	
-		
-	html div 
-		class: 'row cd-main';
-		with: [
-			html section 
-				class: 'cd-section col s4 offset-s4';
-				with: [  
-					html heading level: 1; 
-						class: 'heading-main';	 
-						with: 'StockMAN'.
-				]  
-		].	
+		class: 'header';
+		with: [ html render: self myHeader ].
 
 	"home - initial dashboard page"			
 	html div 
@@ -57,17 +19,17 @@ renderContentOn: html
 							html definitionList 
 								with: [ 
 									html definitionTerm 
-										class: 'dashboard-income-title';
+										class: 'dashboard-income-title center-align';
 										with: [ 
 											html span 
 												class: 'border-under';
 												with: 'Business Income'. 
 										].
 									html definitionData 
-										class: 'dashboard-income-figure';
+										class: 'dashboard-income-figure center-align';
 										with: '49,123'.
 									html definitionData 
-										class: 'dashboard-income-percent';
+										class: 'dashboard-income-percent center-align';
 										with: [
 											html span
 												with: '12%'.
@@ -82,17 +44,17 @@ renderContentOn: html
 							html definitionList 
 								with: [ 
 									html definitionTerm 
-										class: 'dashboard-income-title';
+										class: 'dashboard-income-title center-align';
 										with: [ 
 											html span 
 												class: 'border-under';
 												with: 'Shop Income'. 
 										].
 									html definitionData 
-										class: 'dashboard-income-figure';
+										class: 'dashboard-income-figure center-align';
 										with: '29,122'.
 									html definitionData 
-										class: 'dashboard-income-percent';
+										class: 'dashboard-income-percent center-align';
 										with: [
 											html span
 												with: '16%'.
@@ -107,17 +69,17 @@ renderContentOn: html
 							html definitionList 
 								with: [ 
 									html definitionTerm 
-										class: 'dashboard-income-title';
+										class: 'dashboard-income-title center-align';
 										with: [ 
 											html span 
 												class: 'border-under';
 												with: 'Online Income'. 
 										].
 									html definitionData 
-										class: 'dashboard-income-figure';
+										class: 'dashboard-income-figure center-align';
 										with: '20,001'.
 									html definitionData 
-										class: 'dashboard-income-percent';
+										class: 'dashboard-income-percent center-align';
 										with: [
 											html span
 												with: '2%'.
@@ -181,55 +143,11 @@ renderContentOn: html
 				]  
 		].		
 
-	html navigation
-		id: 'cbp-spmenu-s1';
-		class: 'cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left';
-		with: [
-			html div 
-				class: 'menu-header-holder';
-				with: [
-					html button 
-						id: 'closeLeft';
-						class: 'menu-header';  
-						script: (
-							( html jQuery this )
-							on: 'click'
-							do: (
-								( ( html jQuery id: 'cbp-spmenu-s1' ) removeClass: 'cbp-spmenu-open' )
-							)
-						);
-						with: [
-							html span
-								class: 'menu-header-outline';
-								with: [
-									html span 
-										class: 'fa fa-times fa-5x'  
-								]  
-						]
-				].
-			
-			html anchor 
-				class: 'selected';
-				"script: (
-					( html jQuery this )
-					on: 'click'
-					do: ( self call: render )
-				);"
-				with: 'Home'.
-			html anchor 
-				with: 'Inventory'. 
-			html anchor 
-				with: 'Orders'. 
-			html anchor 
-				with: 'Suppliers'. 
-			html anchor 
-				with: 'Promotions'. 	
-			html anchor 
-				with: 'Reports'.
-			html anchor 
-				with: 'Admin'.			
-		].
-	
+	"navigation stuff"
+	html div 
+		class: 'navigation';
+		with: [ html render: self myNavigation ].
+		
 	html div 
 		script: ( 
 		(html jQuery this load
