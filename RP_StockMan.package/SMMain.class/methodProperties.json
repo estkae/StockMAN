@@ -2,14 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initialize" : "RichardPillar 12/9/2015 17:19",
+		"initialize" : "RichardPillar 12/10/2015 21:54",
 		"myHeader" : "RichardPillar 12/9/2015 17:19",
 		"myHeader:" : "RichardPillar 12/9/2015 17:19",
+		"myHomePage" : "RichardPillar 12/10/2015 21:53",
+		"myHomePage:" : "RichardPillar 12/10/2015 21:53",
 		"myNavigation" : "RichardPillar 12/9/2015 16:58",
 		"myNavigation:" : "RichardPillar 12/9/2015 16:58",
-		"renderContentOn:" : "RichardPillar 12/9/2015 22:52",
-		"renderDashboardProductsChartOn:" : "RichardPillar 11/9/2015 21:34",
-		"renderDashboardSalesChartOn:" : "RichardPillar 11/15/2015 21:33",
-		"salesSeries" : "RichardPillar 11/22/2015 20:53",
-		"style" : "RichardPillar 11/21/2015 22:51",
+		"renderContentOn:" : "RichardPillar 12/10/2015 21:55",
+		"style" : "RichardPillar 12/10/2015 22:11",
 		"updateRoot:" : "RichardPillar 11/21/2015 17:51" } }

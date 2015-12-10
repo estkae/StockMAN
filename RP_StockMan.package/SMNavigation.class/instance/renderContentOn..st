@@ -35,7 +35,9 @@ renderContentOn: html
 					on: 'click' 
 					do: ( 
 						( ( html jQuery class: 'navItem' ) removeClass: 'selected' ),
-						( ( html jQuery this ) addClass: 'selected' ) 
+						( ( html jQuery this ) addClass: 'selected' ),
+						( ( html jQuery id: 'cbp-spmenu-s1' ) removeClass: 'cbp-spmenu-open' ),
+						( ( html jQuery id: 'main' ) load html: [ :r | self renderHomePageOn: r ] ) 
 					) 
 				);
 				with: 'Home'.
@@ -46,7 +48,9 @@ renderContentOn: html
 					on: 'click' 
 					do: ( 
 						( ( html jQuery class: 'navItem' ) removeClass: 'selected' ),
-						( ( html jQuery this ) addClass: 'selected' ) 
+						( ( html jQuery this ) addClass: 'selected' ),
+						( ( html jQuery id: 'cbp-spmenu-s1' ) removeClass: 'cbp-spmenu-open' ),
+						( ( html jQuery id: 'main' ) load html: [ :r | self renderInventoryPageOn: r ] ) 
 					) 
 				);
 				with: 'Inventory'. 

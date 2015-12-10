@@ -3,4 +3,6 @@
 		 },
 	"instance" : {
 		"initialize" : "RichardPillar 12/9/2015 16:51",
-		"renderContentOn:" : "RichardPillar 12/9/2015 23:08" } }
+		"renderContentOn:" : "RichardPillar 12/10/2015 21:44",
+		"renderHomePageOn:" : "RichardPillar 12/10/2015 22:06",
+		"renderInventoryPageOn:" : "RichardPillar 12/10/2015 21:29" } }

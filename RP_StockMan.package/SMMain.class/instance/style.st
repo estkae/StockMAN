@@ -172,8 +172,11 @@ style
 	background-color: lightgray;
 }
 
-/* override bootstrap */
+/* override bootstrap / materialize */
 
+p { 
+	font-size: 18px;
+}
 .container { 
 	min-width: 80%
 }

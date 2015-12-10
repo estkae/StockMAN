@@ -12,7 +12,7 @@ renderPasswordInputOn: html
 						class: 'glyphicon-lock'  
 				].
 			html passwordInput
-				class: 'form-control'; 
+				class: 'form-control login-input'; 
 				autofocus;
 				attributeAt: 'placeholder' put: 'password';
 				attributeAt: 'autocomplete' put: 'off';

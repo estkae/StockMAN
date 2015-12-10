@@ -12,7 +12,10 @@ renderDashboardSalesChartOn: html
 			add: 9002;
 			add: 12765;
 			add: 19211;
-			add: 18998
+			add: 18998;
+			add: 16872; 
+			add: 14998;
+			add: 15100;
 			yourself.
 	
 	myData2 := OrderedCollection new.
@@ -25,6 +28,9 @@ renderDashboardSalesChartOn: html
 			add: 10452;
 			add: 16521;
 			add: 11542;
+			add: 15012;
+			add: 14213;
+			add: 10992;
 			yourself.
 	
 	chart := html highcharts newChart.

@@ -5,7 +5,7 @@ renderLoginButtonOn: html
 		class: 'input-group';
 		with: [ 
 			html button 
-				class: 'btn btn-primary';
+				class: 'btn-large btn-primary';
 				callback: [
 					self validateLogin 
 				 ];

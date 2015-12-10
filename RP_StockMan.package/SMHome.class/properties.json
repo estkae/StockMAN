@@ -7,7 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "SMInventory",
+	"name" : "SMHome",
 	"pools" : [
 		 ],
 	"super" : "WAComponent",

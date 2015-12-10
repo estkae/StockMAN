@@ -12,7 +12,7 @@ renderEmailInputOn: html
 						class: 'glyphicon-user'  
 				].
 			html textInput
-				class: 'form-control'; 
+				class: 'form-control login-input'; 
 				autofocus;
 				attributeAt: 'type' put: 'email';
 				attributeAt: 'placeholder' put: 'johndoe@acme.com';

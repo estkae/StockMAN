@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"initialize" : "RichardPillar 12/10/2015 21:52",
+		"renderContentOn:" : "RichardPillar 12/10/2015 21:52",
+		"renderDashboardProductsChartOn:" : "RichardPillar 12/10/2015 23:28",
+		"renderDashboardSalesChartOn:" : "RichardPillar 12/10/2015 23:33",
+		"salesSeries" : "RichardPillar 12/10/2015 21:57" } }
