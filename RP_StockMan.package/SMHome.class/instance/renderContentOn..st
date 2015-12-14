@@ -90,6 +90,24 @@ renderContentOn: html
 			with: [
 				html div 
 					class: 'container';
+					with: [
+						html div
+							class: 'col s4';
+							with: [ self renderDashboardSalesChartOn: html ].
+						html div 
+							class: 'col s4';
+							with: [ self renderDashboardSalesChartOn: html ].	  
+						html div 
+							class: 'col s4';
+							with: [ self renderDashboardSalesChartOn: html ].	  		
+					]  
+			].		
+		
+		html div 
+			class: 'row';
+			with: [
+				html div 
+					class: 'container';
 					with: [ 
 						html div 
 							class: 'col s12';
@@ -101,38 +119,58 @@ renderContentOn: html
 
 		html div 
 			class: 'row';
-			with: [ 
-				html div 
-					class: 'container';
-					with: [
-						html div 
-							class: 'col s6 dashboard-other-title';
-							with: [  
-								html span 
-									class: 'border-under';
-									with: 'Best Sellers'.
-							].
-						html div 
-							class: 'col s6 dashboard-other-title';
-							with: [  
-								html span 
-									class: 'border-under';
-									with: 'Sales'.
-							]. 
-					] 
-			].		
-	
-		html div 
-			class: 'row';
 			with: [
 				html div 
 					class: 'container';
-					with: [
-						html div
-							class: 'col s6';
-							with: [ self renderDashboardProductsChartOn: html ].
+					with: [ 
 						html div 
-							class: 'col s6';
-							with: [ self renderDashboardSalesChartOn: html ].	  
-					]  
+							class: 'col s12';
+							with: [
+								html unorderedList 
+									class: 'tabs z-depth-1';
+									with: [
+										html listItem 
+											class: 'tab col s4';
+											with: [
+												html anchor
+													class: 'teal-text text-lighten-2';
+													url: '#allSales'; 
+													with: 'All Sales'  
+											].  
+										html listItem 
+											class: 'tab col s4';
+											with: [
+												html anchor 
+													class: 'teal-text text-lighten-2';
+													url: '#channels';
+													with: 'Channels'  
+											]. 
+										html listItem 
+											class: 'tab col s4';
+											with: [
+												html anchor 
+													class: 'teal-text text-lighten-2';
+													url: '#categories';
+													with: 'Categories'  
+											]. 
+									]  
+							].
+						html div 
+							id: 'allSales';
+							class: 'col s12';
+							with: 'All Sales'.
+						html div 
+							id: 'channels';
+							class: 'col s12';
+							with: 'Channels'.
+						html div 
+							id: 'categories';
+							class: 'col s12';
+							with: 'Categories'.	
+					].
+
+ 
+ 
 			].	
+		
+	html document addLoadScript: ( ( JSStream on: '$(''ul.tabs'').tabs()' ) ).

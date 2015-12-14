@@ -12,9 +12,9 @@ style
 }
 .heading-main { 
 	margin-top: 30px; 
-	font-family: Monda;
+	/*font-family: Monda;*/
 	font-size: 88px;
-	color: lightgray;
+	color: #008080;
 }
 .menu-header-holder { 
 	margin-top:20px;
@@ -55,7 +55,7 @@ style
 	display: block;
 	color: #000;
 	font-size: 1.6em;
-	font-family: Monda;
+	/*font-family: Monda;*/
 	font-weight: 300;
 	text-decoration: none;
 	cursor: pointer;
@@ -188,7 +188,7 @@ p {
 	top:50px;
 	right:50px;
 	font-size: 22px;
-	font-family: Monda;
+	/*font-family: Monda;*/
 	padding-top: 10px;
 	padding-left: 15px;
 	padding-right: 15px;

@@ -36,10 +36,10 @@ renderContentOn: html
 		class: 'row cd-main';
 		with: [
 			html section 
-				class: 'cd-section col s4 offset-s4';
+				class: 'cd-section col s12';
 				with: [  
 					html heading level: 1; 
-						class: 'heading-main';	 
+						class: 'heading-main center-align';	 
 						with: 'StockMAN'.
 				]  
 		].	

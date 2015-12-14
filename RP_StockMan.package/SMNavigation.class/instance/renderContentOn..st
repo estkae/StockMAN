@@ -29,7 +29,7 @@ renderContentOn: html
 				].
 			
 			html anchor 
-				class: 'navItem selected';
+				class: 'navItem selected center-align';
 				script: ( 
 					html jQuery this 
 					on: 'click' 
@@ -42,7 +42,7 @@ renderContentOn: html
 				);
 				with: 'Home'.
 			html anchor
-			  	class: 'navItem'; 
+			  	class: 'navItem center-align'; 
 				script: ( 
 					html jQuery this 
 					on: 'click' 
@@ -50,13 +50,13 @@ renderContentOn: html
 						( ( html jQuery class: 'navItem' ) removeClass: 'selected' ),
 						( ( html jQuery this ) addClass: 'selected' ),
 						( ( html jQuery id: 'cbp-spmenu-s1' ) removeClass: 'cbp-spmenu-open' ),
-						( ( html jQuery id: 'main' ) load html: [ :r | self renderInventoryPageOn: r ] ),
-						( ( html jQuery expression: '$(''select'').material_select()' ) )							
+						( ( html jQuery id: 'main' ) load html: [ :r | self renderInventoryPageOn: r ] )
+						"( ( html jQuery expression: '$(''select'').material_select()' ) )	"						
 					) 
 				);
 				with: 'Inventory'. 
 			html anchor 
-				class: 'navItem'; 
+				class: 'navItem center-align'; 
 				script: ( 
 					html jQuery this 
 					on: 'click' 
@@ -67,7 +67,7 @@ renderContentOn: html
 				);
 				with: 'Orders'. 
 			html anchor 
-				class: 'navItem'; 
+				class: 'navItem center-align'; 
 				script: ( 
 					html jQuery this 
 					on: 'click' 
@@ -78,7 +78,7 @@ renderContentOn: html
 				);
 				with: 'Suppliers'. 
 			html anchor 
-				class: 'navItem'; 
+				class: 'navItem center-align'; 
 				script: ( 
 					html jQuery this 
 					on: 'click' 
@@ -89,7 +89,7 @@ renderContentOn: html
 				);				
 				with: 'Promotions'. 	
 			html anchor 
-				class: 'navItem'; 
+				class: 'navItem center-align'; 
 				script: ( 
 					html jQuery this 
 					on: 'click' 
@@ -100,7 +100,7 @@ renderContentOn: html
 				);
 				with: 'Reports'.
 			html anchor 
-				class: 'navItem'; 
+				class: 'navItem center-align'; 
 				script: ( 
 					html jQuery this 
 					on: 'click' 

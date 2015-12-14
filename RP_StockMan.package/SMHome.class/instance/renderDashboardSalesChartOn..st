@@ -18,7 +18,7 @@ renderDashboardSalesChartOn: html
 			add: 15100;
 			yourself.
 	
-	myData2 := OrderedCollection new.
+	"myData2 := OrderedCollection new.
 		myData2 add: 10133;
 			add: 14188;
 			add: 16001;
@@ -31,24 +31,28 @@ renderDashboardSalesChartOn: html
 			add: 15012;
 			add: 14213;
 			add: 10992;
-			yourself.
+			yourself."
 	
 	chart := html highcharts newChart.
 	chart lang thousandsSep: ','.
-	chart yAxis title text: 'Sales'.
-	chart yAxis min: 500.
-	chart chart type: 'spline'.
-	chart title text: 'Sales - 12 months'.
-	chart xAxis title text: 'Date'.
-	chart xAxis categories: #('Jan' 'Feb' 'Mar' 'Apr' 'May' 'Jun' 'July' 'Aug' 'Sept' 'Oct' 'Nov' 'Dec').
-	chart xAxis crosshair: 'true'.
-	chart tooltip shared: 'true'.
+	"chart yAxis title text: 'Sales'.
+	chart yAxis min: 500."
+	chart chart type: 'areaspline'.
+	chart title text: ''.
+	"chart xAxis title text: 'Date'."
+	"chart xAxis categories: #('Jan' 'Feb' 'Mar' 'Apr' 'May' 'Jun' 'July' 'Aug' 'Sept' 'Oct' 'Nov' 'Dec')."
+	chart yAxis visible: false.
+	"chart xAxis crosshair: 'true'.
+	chart xAxis labels enabled: false."
+	chart xAxis visible: false.
+	"chart tooltip shared: 'true'."
 	chart credits enabled: false.
 	
-	chart plotOptions column colorByPoint: true.
-	chart plotOptions column dataLabels enabled: true.
+	chart plotOptions areaspline color: '#569090'.
 	
 	chart series index:0; name: 'Sales 2015'; data: myData1.
-	chart series index:0; name: 'Sales 2014'; data: myData2.
+	"chart series index:0; name: 'Sales 2014'; data: myData2."
 			
-	html div script: chart.
+	html div
+		class: 'card small';
+	 	script: chart.
