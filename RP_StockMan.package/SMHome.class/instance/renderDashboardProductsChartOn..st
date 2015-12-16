@@ -1,35 +1,36 @@
 as yet unclassified
 renderDashboardProductsChartOn: html
 
-	| chart myData baseColor myColors myColor |
-
-	myData := OrderedCollection new.
-	myData add: ( Dictionary newFrom: {'name'->'Tyres'. 'y'-> 14133} ).
-	myData add: ( Dictionary newFrom: {'name'->'Lights'. 'y'-> 17188} ).
-	myData add: ( Dictionary newFrom: {'name'-> 'Clothing'. 'y'-> 21001. 'sliced'->'true'} ).
-	myData add: ( Dictionary newFrom: {'name'-> 'Accessories'. 'y'-> 12762. } ).
-	myData add: ( Dictionary newFrom: {'name'-> 'Wheels'. 'y'-> 13122. } ).
-	myData add: ( Dictionary newFrom: {'name'-> 'Glasses'. 'y'-> 9002. } ).
+	| chart myData1 myData2 |
+	
+	myData1 := #(1 2 3 4 5).
+	myData2 := #(1 2 3 4 5).
 	
 	chart := html highcharts newChart.
-	chart yAxis title text: 'Visits'.
+	chart yAxis title text: 'Units sold'.
 	chart legend enabled: false.
-	chart chart type: 'pie'.
-	chart title text: 'Sales - by Product Category'.
+	chart chart type: 'column'.
+	chart title text: ''.
 	chart xAxis title text: 'Site'.
 	chart xAxis type: 'category'.
+	chart xAxis categories: #('Accesories' 'Clothing' 'Glasses' 'Lights' 'Tyres' 'Wheels').
 	chart credits enabled: false.
 	
-	baseColor := Color lightBlue darker.
+	"baseColor := Color lightBlue darker.
 	myColors := OrderedCollection new.
 	1 to: 10 do: [ :i | 
 		myColor := baseColor adjustBrightness: i * -0.1.
 		myColors add: myColor asHTMLColor. 
-	].
+	]."
 
-	chart plotOptions pie colors: myColors.
-	chart plotOptions pie dataLabels enabled: true.
-	chart plotOptions pie allowPointSelect: true; cursor: 'pointer'.
+	"chart plotOptions pie colors: myColors."
+	chart plotOptions column dataLabels enabled: true.
+	chart plotOptions column stacking: 'normal'.
 	
-	chart series index:0; name: 'Products'; data: myData.	
-	html div script: chart			
+	chart series index:0; name: 'Shop Sales'; data: myData1.	
+	chart series index:0; name: 'Online Sales'; data: myData2.
+		
+	html div
+		class: 'col s12';
+		style: 'margin-top: 10px;';
+	 	script: chart			

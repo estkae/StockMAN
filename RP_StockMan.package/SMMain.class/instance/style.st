@@ -178,7 +178,7 @@ p {
 	font-size: 18px;
 }
 .container { 
-	min-width: 80%
+	min-width: 70%
 }
 
 /* dashboard styling */
@@ -230,7 +230,7 @@ p {
 .dashboard-income-figure { 
 	margin-left:0; 
 	padding:30px 0;
-	font-size:82px;
+	font-size:70px;
 	letter-spacing:-1px;
 	line-height:1em;
 	color:#34495e;

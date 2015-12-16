@@ -4,55 +4,50 @@ renderDashboardSalesChartOn: html
 	| chart myData1 myData2 |
 
 	myData1 := OrderedCollection new.
-		myData1 add: 14133;
-			add: 17188;
-			add: 21001;
-			add: 12762;
-			add: 13122;
-			add: 9002;
-			add: 12765;
-			add: 19211;
-			add: 18998;
-			add: 16872; 
-			add: 14998;
-			add: 15100;
+		myData1 add: 8722;
+			add: 10013;
+			add: 11211;
+			add: 5231;
+			add: 8723;
+			add: 5456;
+			add: 8701;
+			add: 10692;
+			add: 10993;
+			add: 8022; 
+			add: 6998;
+			add: 7691;
 			yourself.
-	
-	"myData2 := OrderedCollection new.
-		myData2 add: 10133;
-			add: 14188;
-			add: 16001;
-			add: 10762;
-			add: 11122;
-			add: 6002;
-			add: 10452;
-			add: 16521;
-			add: 11542;
-			add: 15012;
-			add: 14213;
-			add: 10992;
-			yourself."
+			
+	myData2 := OrderedCollection new.
+		myData2 add: 5411;
+			add: 7175;
+			add: 9790;
+			add: 7531;
+			add: 4399;
+			add: 3546;
+			add: 4064;
+			add: 8519;
+			add: 8005;
+			add: 8850; 
+			add: 8000;
+			add: 7409;
+			yourself.		
 	
 	chart := html highcharts newChart.
 	chart lang thousandsSep: ','.
-	"chart yAxis title text: 'Sales'.
-	chart yAxis min: 500."
-	chart chart type: 'areaspline'.
+	chart chart type: 'area'.
 	chart title text: ''.
-	"chart xAxis title text: 'Date'."
-	"chart xAxis categories: #('Jan' 'Feb' 'Mar' 'Apr' 'May' 'Jun' 'July' 'Aug' 'Sept' 'Oct' 'Nov' 'Dec')."
-	chart yAxis visible: false.
-	"chart xAxis crosshair: 'true'.
-	chart xAxis labels enabled: false."
-	chart xAxis visible: false.
-	"chart tooltip shared: 'true'."
+	chart yAxis max: 22000.
+	chart xAxis categories: #('Jan' 'Feb' 'Mar' 'Apr' 'May' 'Jun' 'July' 'Aug' 'Sept' 'Oct' 'Nov' 'Dec').
 	chart credits enabled: false.
 	
-	chart plotOptions areaspline color: '#569090'.
+	chart plotOptions area stacking: 'normal'; lineColor: '#666666'; lineWidth: 1.
+	chart plotOptions area marker lineColor: '#666666'; lineWidth: 1.
 	
-	chart series index:0; name: 'Sales 2015'; data: myData1.
-	"chart series index:0; name: 'Sales 2014'; data: myData2."
+	chart series index:0; name: 'Shop Sales 2015'; data: myData1.
+	chart series index:0; name: 'Online Sales 2015'; data: myData2.
 			
 	html div
-		class: 'card small';
+		class: 'card-panel col s12';
+		style: 'height:300px';
 	 	script: chart.

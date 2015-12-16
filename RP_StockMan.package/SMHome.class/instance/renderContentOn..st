@@ -21,7 +21,7 @@ renderContentOn: html
 											].
 										html definitionData 
 											class: 'dashboard-income-figure center-align';
-											with: '49,123'.
+											with: '185,152'.
 										html definitionData 
 											class: 'dashboard-income-percent center-align';
 											with: [
@@ -46,7 +46,7 @@ renderContentOn: html
 											].
 										html definitionData 
 											class: 'dashboard-income-figure center-align';
-											with: '29,122'.
+											with: '102,453'.
 										html definitionData 
 											class: 'dashboard-income-percent center-align';
 											with: [
@@ -71,7 +71,7 @@ renderContentOn: html
 											].
 										html definitionData 
 											class: 'dashboard-income-figure center-align';
-											with: '20,001'.
+											with: '82,699'.
 										html definitionData 
 											class: 'dashboard-income-percent center-align';
 											with: [
@@ -92,14 +92,8 @@ renderContentOn: html
 					class: 'container';
 					with: [
 						html div
-							class: 'col s4';
-							with: [ self renderDashboardSalesChartOn: html ].
-						html div 
-							class: 'col s4';
-							with: [ self renderDashboardSalesChartOn: html ].	  
-						html div 
-							class: 'col s4';
-							with: [ self renderDashboardSalesChartOn: html ].	  		
+							class: 'col s12';
+							with: [ self renderDashboardSalesChartOn: html ].  		
 					]  
 			].		
 		
@@ -133,7 +127,7 @@ renderContentOn: html
 											class: 'tab col s4';
 											with: [
 												html anchor
-													class: 'teal-text text-lighten-2';
+													class: 'light-blue-text text-darken-4';
 													url: '#allSales'; 
 													with: 'All Sales'  
 											].  
@@ -141,7 +135,7 @@ renderContentOn: html
 											class: 'tab col s4';
 											with: [
 												html anchor 
-													class: 'teal-text text-lighten-2';
+													class: 'light-blue-text text-darken-4';
 													url: '#channels';
 													with: 'Channels'  
 											]. 
@@ -149,16 +143,135 @@ renderContentOn: html
 											class: 'tab col s4';
 											with: [
 												html anchor 
-													class: 'teal-text text-lighten-2';
+													class: 'light-blue-text text-darken-4';
 													url: '#categories';
 													with: 'Categories'  
 											]. 
 									]  
 							].
+						
+						html break.
+						
 						html div 
 							id: 'allSales';
-							class: 'col s12';
-							with: 'All Sales'.
+							with: [ 
+								html div
+									class: 'col s7';
+									with: [  
+										html table 
+											class: 'striped centered';
+											with: [  
+												html tableHead 
+													with: [ 
+														html tableRow 
+															with: [  
+																html tableHeading 
+																	with: 'Category'.
+																html tableHeading 
+																	with: 'Units Sold - Shop / Online'.
+																html tableHeading 
+																	with: 'Units in Stock'.
+																html tableHeading 
+																	with: 'Revenue'.
+																html tableHeading 
+																	with: '% Last Yr'				
+															] 
+													].
+												html tableBody 
+													with: [
+														html tableRow 
+															with: [ 
+																html tableData 
+																	style: 'font-weight: 600';
+																	with: 'Accessories'.
+																html tableData 
+																	with: '923 / 310'.
+																html tableData 
+																	with: '121'.
+																html tableData 
+																	with: '6,231'.
+																html tableData 
+																	with: '+ 14%'.				 
+															].  
+														html tableRow 
+															with: [ 
+																html tableData 
+																	style: 'font-weight: 600';
+																	with: 'Clothing'.
+																html tableData 
+																	with: '1,233'.
+																html tableData 
+																	with: '121'.
+																html tableData 
+																	with: '6,231'.
+																html tableData 
+																	with: '+ 14%'.				 
+															].  
+														html tableRow 
+															with: [ 
+																html tableData 
+																	style: 'font-weight: 600';
+																	with: 'Glasses'.
+																html tableData 
+																	with: '1,233'.
+																html tableData 
+																	with: '121'.
+																html tableData 
+																	with: '6,231'.
+																html tableData 
+																	with: '+ 14%'.				 
+															].  
+														html tableRow 
+															with: [ 
+																html tableData 
+																	style: 'font-weight: 600';
+																	with: 'Lights'.
+																html tableData 
+																	with: '1,233'.
+																html tableData 
+																	with: '121'.
+																html tableData 
+															with: '6,231'.
+																html tableData 
+																	with: '+ 14%'.				 
+															].  
+														html tableRow 
+															with: [ 
+																html tableData 
+																	style: 'font-weight: 600';
+																	with: 'Tyres'.
+																html tableData 
+																	with: '1,233'.
+																html tableData 
+																	with: '121'.
+																html tableData 
+																	with: '6,231'.
+																html tableData 
+																	with: '+ 14%'.				 
+															].  
+														html tableRow 
+															with: [ 
+																html tableData 
+																	style: 'font-weight: 600';
+																	with: 'Wheels'.
+																html tableData 
+																	with: '1,233'.
+																html tableData 
+																	with: '121'.
+																html tableData 
+																	with: '6,231'.
+																html tableData 
+																	with: '+ 14%'.				 
+															]. 
+													]
+											].
+									].	
+								html div
+									class: 'col s5';
+									with: [ self renderDashboardProductsChartOn: html ]. 		
+							].
+						 	
+							
 						html div 
 							id: 'channels';
 							class: 'col s12';
