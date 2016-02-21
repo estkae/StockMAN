@@ -50,8 +50,7 @@ renderContentOn: html
 						( ( html jQuery class: 'navItem' ) removeClass: 'selected' ),
 						( ( html jQuery this ) addClass: 'selected' ),
 						( ( html jQuery id: 'cbp-spmenu-s1' ) removeClass: 'cbp-spmenu-open' ),
-						( ( html jQuery id: 'main' ) load html: [ :r | self renderInventoryPageOn: r ] )
-						"( ( html jQuery expression: '$(''select'').material_select()' ) )	"						
+						( ( html jQuery id: 'main' ) load html: [ :r | self renderInventoryPageOn: r ] )						
 					) 
 				);
 				with: 'Inventory'. 

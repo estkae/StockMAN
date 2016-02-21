@@ -1,3 +1,3 @@
 accessing
 session
-	^ SMSchema sessionForLogin: self login
+	^ SMDBSchema sessionForLogin: self login

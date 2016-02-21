@@ -1,0 +1,22 @@
+{
+	"category" : "RP_StockMan",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"category",
+		"sales_revenue",
+		"volume",
+		"target_volume",
+		"margin",
+		"orders",
+		"orders_outstanding",
+		"promotions",
+		"promotions_active" ],
+	"name" : "SMHomeCategorySummary",
+	"pools" : [
+		 ],
+	"super" : "WAComponent",
+	"type" : "normal" }

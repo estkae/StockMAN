@@ -1,0 +1,15 @@
+{
+	"category" : "RP_StockMan",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"myCategory",
+		"myItems" ],
+	"name" : "SMInventoryCategoryItems",
+	"pools" : [
+		 ],
+	"super" : "WAComponent",
+	"type" : "normal" }

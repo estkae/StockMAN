@@ -17,6 +17,7 @@ renderContentOn: html
 							class: 'panel-heading';
 							with: [
 								html heading level: 1; 
+									style: 'font-family:Lobster;';
 									with: 'StockMAN'.
 								html paragraph 
 									with: 'Stock management the SMART way.'	  

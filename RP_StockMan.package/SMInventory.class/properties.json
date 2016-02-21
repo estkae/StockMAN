@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"productName" ],
+		"category",
+		"productName",
+		"vatrates" ],
 	"name" : "SMInventory",
 	"pools" : [
 		 ],

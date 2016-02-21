@@ -1,0 +1,21 @@
+{
+	"category" : "RP_StockMan",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"itemid",
+		"itemname",
+		"description",
+		"costPrice",
+		"sellPrice",
+		"vatCode",
+		"supplierId",
+		"category" ],
+	"name" : "SMDBItem",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

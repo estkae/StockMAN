@@ -1,11 +1,13 @@
 rendering
 renderContentOn: html
+	
+	| myItems |	
 		
 	html div 
-		class: 'row';
+		class: 'container';
 			with: [  
 				html div 
-					class: 'container';
+					class: 'row';
 					with: [
 						html div 
 							class: 'col s4';
@@ -19,61 +21,54 @@ renderContentOn: html
 													class: 'input-field col s12';											
 													with: [  
 														html select 
-															with: [  
-																html option
-																	value: '';
-																	attributeAt: 'disabled' put: 'disabled';
-																	attributeAt: 'selected' put: 'selected';
-																	with: 'Choose Category'.
-																html option 
-																	value: 'Accessories';
-																	with: 'Accessories'.
-																html option 
-																	value: 'Clothing';
-																	with: 'Clothing'.
-																html option 
-																	value: 'Glasses';
-																	with: 'Glasses'.	
-																html option 
-																	value: 'Lights';
-																	with: 'Lights'.
-																html option 
-																	value: 'Tyres';
-																	with: 'Tyres'.
-																html option 
-																	value: 'Wheels';
-																	with: 'Wheels'.		
-															].
+															class: 'validate';
+															size: 6;
+															list: self categories;
+															selected: ( self categories at: 1 );
+															callback: [ 	:value | self category: value asString ].														
 														html label 
-															with: 'Select Category'.
+															with: 'SELECT CATEGORY'.
 													].
 											].	
-										html div
-											class: 'row';
-											with: [ 
-												html div  
-													class: 'input-field col s12';
-													with: [
-														html textInput 
-															class: 'validate';
-  															id: 'productName';
-															on: #productName of: self.
-														html label 	
-															with: 'Product Name'.	
-														
-													].		
-											].
+
 										html div 
 											class: 'row';
 											with: [
-												html anchor 
-													class: 'waves-effect waves-light btn-large';
-													with: 'Process'   
+												html div 
+													class: 'col s12';
+													with: [ 
+														html anchor 
+															class: 'waves-effect waves-light btn-large';
+															onClick: ( ( html jQuery ajax )
+																serializeForm;
+																script: [ :s | 															
+																	myItems := self findItems: self category.	
+																	( myItems isEmpty ) 
+																		ifTrue: [  
+																			s << (  ( s jQuery class: #'productInfo' ) load html: [ :r | self renderNoProductMessageOn: r ] )
+																		]	
+																		ifFalse: [
+																			s << (  ( s jQuery class: #'productInfo' ) load html: [ :r | self renderCategoryDataOn: r with: self category ] ).
+																		].	
+																] 	
+															);
+															with: 'Process'
+													]		   
 											]
 									].											
 							].
+						
 						html div 
-							class: 'col s8'.
+							class: 'col s7 offset-s1';
+							with: [  
+								html break.
+								html div 
+									with: [
+										html blockquote 
+											style: 'margin-left:15px;font-size: 18px;font-weight:300;'; 
+											with: 'Select a Category in order to display relevant information - statistics / charts with regard to sales performance. Select a product from the list to view additional information.'  
+									]
+							]
 					]
 			].
 	
@@ -87,19 +82,22 @@ renderContentOn: html
 		class: 'container';
 		with: [
 			html div 
-				class: 'row';
+				class: 'productInfo';
 				with: [ 
 					html div 
-						class: 'col s12 productInfo';
+						class: 'row';
 						with: [ 
-							html span
-								class: 'center-align';  
-								with: [  
-									html heading level: 2; class: 'center-align teal-text text-lighten-4'; with: 'Category / Product data'. 
-								].	
-						]		
-				]  
+							html div 
+								class: 'col s12';
+								with: [ 
+									html span
+										class: 'center-align';  
+										with: [  
+											html heading level: 1; class: 'center-align teal-text text-lighten-4'; with: 'Category / Product data'. 
+										].	
+								]		
+						]
+				].	  
 		].	 		
 
 		html document addLoadScript: ( ( JSStream on: '$(''select'').material_select()' ) ).	
-		

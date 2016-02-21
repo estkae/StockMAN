@@ -2,8 +2,18 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initialize" : "RichardPillar 12/10/2015 22:00",
+		"categories" : "RichardPillar 12/28/2015 22:42",
+		"category" : "RichardPillar 12/28/2015 18:40",
+		"category:" : "RichardPillar 12/28/2015 18:40",
+		"findItems:" : "RichardPillar 2/8/2016 19:38",
+		"initialize" : "RichardPillar 2/8/2016 19:32",
 		"productName" : "RichardPillar 12/16/2015 22:07",
 		"productName:" : "RichardPillar 12/16/2015 22:07",
-		"renderContentOn:" : "RichardPillar 12/16/2015 22:41",
-		"style" : "RichardPillar 12/13/2015 23:12" } }
+		"renderAddStockItemOn:" : "RichardPillar 2/6/2016 22:28",
+		"renderCategoryDataOn:with:" : "RichardPillar 2/7/2016 21:54",
+		"renderCategoryItemsOn:" : "RichardPillar 2/8/2016 19:39",
+		"renderCategorySalesChartOn:" : "RichardPillar 12/30/2015 22:10",
+		"renderContentOn:" : "RichardPillar 2/6/2016 21:39",
+		"renderNoProductMessageOn:" : "RichardPillar 12/30/2015 11:35",
+		"style" : "RichardPillar 12/13/2015 23:12",
+		"vatrates" : "RichardPillar 2/4/2016 22:42" } }

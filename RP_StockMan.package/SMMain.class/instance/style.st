@@ -4,7 +4,7 @@ style
 .menu-marker {  
 	position: fixed;
 	top: 50px;
-	left: 50px;
+	left: 80px;
 }
 .menu {  
 	color: black;
@@ -73,7 +73,7 @@ style
 /* Orientation-dependent styles for the content of the menu */
 
 .cbp-spmenu-vertical {
-	width: 310px;
+	width: 260px;
 	height: 100%;
 	top: 0;
 	/*border-right:4px solid lightblue;*/
@@ -89,7 +89,7 @@ style
 /* Vertical menu that slides from the left or right */
 
 .cbp-spmenu-left {
-	left: -310px;
+	left: -260px;
 }
 
 .cbp-spmenu-left.cbp-spmenu-open {

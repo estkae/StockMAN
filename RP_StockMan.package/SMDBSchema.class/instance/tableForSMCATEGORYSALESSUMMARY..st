@@ -1,0 +1,52 @@
+tables
+tableForSMCATEGORYSALESSUMMARY: aTable
+	(aTable createFieldNamed: 'id' type: platform serial) bePrimaryKey.
+	aTable createFieldNamed: 'category' type: (platform varchar: 64).
+	aTable createFieldNamed: 'sales_1' type: (platform integer).
+	aTable createFieldNamed: 'sales_2' type: (platform integer).
+	aTable createFieldNamed: 'sales_3' type: (platform integer).
+	aTable createFieldNamed: 'sales_4' type: (platform integer).
+	aTable createFieldNamed: 'sales_5' type: (platform integer).
+	aTable createFieldNamed: 'sales_6' type: (platform integer).
+	aTable createFieldNamed: 'sales_7' type: (platform integer).
+	aTable createFieldNamed: 'sales_8' type: (platform integer).
+	aTable createFieldNamed: 'sales_9' type: (platform integer).
+	aTable createFieldNamed: 'sales_10' type: (platform integer).
+	aTable createFieldNamed: 'sales_11' type: (platform integer).
+	aTable createFieldNamed: 'sales_12' type: (platform integer).
+	aTable createFieldNamed: 'sales_13' type: (platform integer).
+	aTable createFieldNamed: 'sales_14' type: (platform integer).
+	aTable createFieldNamed: 'sales_15' type: (platform integer).
+	aTable createFieldNamed: 'sales_16' type: (platform integer).
+	aTable createFieldNamed: 'sales_17' type: (platform integer).
+	aTable createFieldNamed: 'sales_18' type: (platform integer).
+	aTable createFieldNamed: 'sales_19' type: (platform integer).
+	aTable createFieldNamed: 'sales_20' type: (platform integer).
+	aTable createFieldNamed: 'sales_21' type: (platform integer).
+	aTable createFieldNamed: 'sales_22' type: (platform integer).
+	aTable createFieldNamed: 'sales_23' type: (platform integer).
+	aTable createFieldNamed: 'sales_24' type: (platform integer).
+	aTable createFieldNamed: 'volume1' type: (platform integer).
+	aTable createFieldNamed: 'volume2' type: (platform integer).
+	aTable createFieldNamed: 'volume3' type: (platform integer).
+	aTable createFieldNamed: 'volume4' type: (platform integer).
+	aTable createFieldNamed: 'volume5' type: (platform integer).
+	aTable createFieldNamed: 'volume6' type: (platform integer).
+	aTable createFieldNamed: 'volume7' type: (platform integer).
+	aTable createFieldNamed: 'volume8' type: (platform integer).
+	aTable createFieldNamed: 'volume9' type: (platform integer).
+	aTable createFieldNamed: 'volume10' type: (platform integer).
+	aTable createFieldNamed: 'volume11' type: (platform integer).
+	aTable createFieldNamed: 'volume12' type: (platform integer).
+	aTable createFieldNamed: 'volume13' type: (platform integer).
+	aTable createFieldNamed: 'volume14' type: (platform integer).
+	aTable createFieldNamed: 'volume15' type: (platform integer).
+	aTable createFieldNamed: 'volume16' type: (platform integer).
+	aTable createFieldNamed: 'volume17' type: (platform integer).
+	aTable createFieldNamed: 'volume18' type: (platform integer).
+	aTable createFieldNamed: 'volume19' type: (platform integer).
+	aTable createFieldNamed: 'volume20' type: (platform integer).
+	aTable createFieldNamed: 'volume21' type: (platform integer).
+	aTable createFieldNamed: 'volume22' type: (platform integer).
+	aTable createFieldNamed: 'volume23' type: (platform integer).
+	aTable createFieldNamed: 'volume24' type: (platform integer).

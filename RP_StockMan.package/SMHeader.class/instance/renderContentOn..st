@@ -40,6 +40,7 @@ renderContentOn: html
 				with: [  
 					html heading level: 1; 
 						class: 'heading-main center-align';	 
+						style: 'font-family:Lobster;color:black;';
 						with: 'StockMAN'.
 				]  
 		].	

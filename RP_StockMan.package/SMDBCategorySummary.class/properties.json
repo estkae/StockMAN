@@ -1,0 +1,23 @@
+{
+	"category" : "RP_StockMan",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"id",
+		"category",
+		"sales_revenue",
+		"volume",
+		"target_volume",
+		"margin",
+		"orders",
+		"orders_outstanding",
+		"promotions",
+		"promotions_active" ],
+	"name" : "SMDBCategorySummary",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

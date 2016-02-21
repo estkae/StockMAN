@@ -48,6 +48,6 @@ renderDashboardSalesChartOn: html
 	chart series index:0; name: 'Online Sales 2015'; data: myData2.
 			
 	html div
-		class: 'card-panel col s12';
-		style: 'height:300px';
+		"class: 'col s12';"
+		style: 'height:300px; box-shadow: 0 1px 2px 1px rgba(0,0,0,.08), 0 3px 6px rgba(0,0,0,.08);';
 	 	script: chart.

@@ -1,0 +1,3 @@
+tables
+allTableNames
+	^ #('SMUSER' 'SMITEM' 'SMITEMSTOCK' 'SMCATEGORYSUMMARY')

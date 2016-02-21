@@ -2,9 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initialize" : "RichardPillar 12/10/2015 21:52",
-		"renderContentOn:" : "RichardPillar 12/16/2015 20:17",
-		"renderDashboardProductsChartOn:" : "RichardPillar 12/16/2015 20:35",
-		"renderDashboardSalesChartOn:" : "RichardPillar 12/16/2015 19:17",
+		"findCategorySummary" : "RichardPillar 1/14/2016 23:32",
+		"initialize" : "RichardPillar 2/8/2016 19:27",
+		"renderCategorySummaryDataOn:with:" : "RichardPillar 1/14/2016 23:14",
+		"renderContentOn:" : "RichardPillar 1/18/2016 21:20",
+		"renderDashboardProductsChartOn:" : "RichardPillar 1/4/2016 22:17",
+		"renderDashboardSalesChartOn:" : "RichardPillar 1/6/2016 23:04",
 		"salesSeries" : "RichardPillar 12/10/2015 21:57",
-		"style" : "RichardPillar 12/14/2015 23:25" } }
+		"style" : "RichardPillar 1/16/2016 16:40" } }

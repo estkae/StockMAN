@@ -4,11 +4,11 @@
 	"instance" : {
 		"email" : "RichardPillar 10/22/2015 12:30",
 		"email:" : "RichardPillar 10/22/2015 12:30",
-		"findUserByEmail:" : "RichardPillar 10/23/2015 21:08",
+		"findUserByEmail:" : "RichardPillar 12/30/2015 17:21",
 		"initialize" : "RichardPillar 10/22/2015 12:35",
 		"password" : "RichardPillar 10/22/2015 12:30",
 		"password:" : "RichardPillar 10/22/2015 12:30",
-		"renderContentOn:" : "RichardPillar 12/10/2015 23:09",
+		"renderContentOn:" : "RichardPillar 2/12/2016 15:53",
 		"renderEmailInputOn:" : "RichardPillar 12/10/2015 23:10",
 		"renderForgottenPasswordLinkOn:" : "RichardPillar 10/22/2015 17:16",
 		"renderLoginButtonOn:" : "RichardPillar 12/10/2015 22:18",
@@ -16,5 +16,5 @@
 		"sha1" : "RichardPillar 10/22/2015 12:30",
 		"sha1:" : "RichardPillar 10/22/2015 12:30",
 		"style" : "RichardPillar 12/10/2015 23:16",
-		"updateRoot:" : "RichardPillar 11/21/2015 17:51",
+		"updateRoot:" : "RichardPillar 2/12/2016 15:53",
 		"validateLogin" : "RichardPillar 10/29/2015 13:29" } }
