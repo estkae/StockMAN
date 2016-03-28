@@ -4,6 +4,7 @@
 	"instance" : {
 		"category" : "RichardPillar 1/9/2016 21:37",
 		"category:" : "RichardPillar 1/9/2016 21:37",
+		"findCategorySalesSummaryDataFor:" : "RichardPillar 2/22/2016 20:10",
 		"initialize" : "RichardPillar 1/8/2016 20:40",
 		"margin" : "RichardPillar 1/14/2016 22:41",
 		"margin:" : "RichardPillar 1/14/2016 22:41",
@@ -15,8 +16,8 @@
 		"promotions:" : "RichardPillar 1/14/2016 22:41",
 		"promotions_active" : "RichardPillar 1/14/2016 22:41",
 		"promotions_active:" : "RichardPillar 1/14/2016 22:41",
-		"renderCategorySummaryChartOn:for:" : "RichardPillar 1/31/2016 21:00",
-		"renderContentOn:" : "RichardPillar 2/12/2016 14:15",
+		"renderCategorySummaryChartOn:for:" : "RichardPillar 2/22/2016 20:28",
+		"renderContentOn:" : "RichardPillar 2/22/2016 20:26",
 		"sales_revenue" : "RichardPillar 1/14/2016 22:41",
 		"sales_revenue:" : "RichardPillar 1/14/2016 22:41",
 		"target_volume" : "RichardPillar 1/14/2016 22:41",

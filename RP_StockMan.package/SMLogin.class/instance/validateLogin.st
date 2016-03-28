@@ -2,7 +2,7 @@ initialization
 validateLogin
 
 	| user myPassword |
-	
+
 	user := self findUserByEmail: self email.
 	"myPassword :=  sha1 hashMessage: self password."
 	myPassword := self password.

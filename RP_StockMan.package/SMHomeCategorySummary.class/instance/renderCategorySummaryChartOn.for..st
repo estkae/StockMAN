@@ -1,36 +1,38 @@
 as yet unclassified
 renderCategorySummaryChartOn: html for: myCategory
 
-	| chart myData1 myData2 yAxis1 yAxis2 myYaxis |
+	| chart mySummaryData myData1 myData2 yAxis1 yAxis2 myYaxis |
+
+	mySummaryData := self findCategorySalesSummaryDataFor: myCategory.
 
 	myData1 := OrderedCollection new.
-		myData1 add: 8722;
-			add: 10013;
-			add: 11211;
-			add: 5231;
-			add: 8723;
-			add: 5456;
-			add: 8701;
-			add: 10692;
-			add: 10993;
-			add: 8022; 
-			add: 6998;
-			add: 7691;
+		myData1 add: mySummaryData sales_13;
+			add: mySummaryData sales_14;
+			add: mySummaryData sales_15;
+			add: mySummaryData sales_16;
+			add: mySummaryData sales_17;
+			add: mySummaryData sales_18;
+			add: mySummaryData sales_19;
+			add: mySummaryData sales_20;
+			add: mySummaryData sales_21;
+			add: mySummaryData sales_22; 
+			add: mySummaryData sales_23;
+			add: mySummaryData sales_24;
 			yourself.
 
 	myData2 := OrderedCollection new.
-		myData2 add: 8722;
-			add: 10013;
-			add: 11211;
-			add: 5231;
-			add: 8723;
-			add: 5456;
-			add: 8701;
-			add: 10692;
-			add: 10993;
-			add: 8022; 
-			add: 6998;
-			add: 7691;
+		myData2 add: mySummaryData volume13;
+			add: mySummaryData volume14;
+			add: mySummaryData volume15;
+			add: mySummaryData volume16;
+			add: mySummaryData volume17;
+			add: mySummaryData volume18;
+			add: mySummaryData volume19;
+			add: mySummaryData volume20;
+			add: mySummaryData volume21;
+			add: mySummaryData volume22; 
+			add: mySummaryData volume23;
+			add: mySummaryData volume24;
 			yourself.
 
 	"set yaxis objects"	
@@ -56,7 +58,7 @@ renderCategorySummaryChartOn: html for: myCategory
 
 	chart plotOptions column color: '#2b8abe'.
 	
-	chart series index:0; name: myCategory, ' Volume'; data: myData1; type: 'column'; yAxis: 1.
+	chart series index:0; name: myCategory, ' Volume'; data: myData2; type: 'column'; yAxis: 1.
 	chart series index:0; name: myCategory, ' Sales'; data: myData1; type: 'spline'; color: '#808080'.
 			
 	html div

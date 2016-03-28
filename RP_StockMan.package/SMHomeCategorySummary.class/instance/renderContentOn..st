@@ -137,7 +137,7 @@ renderContentOn: html
 	
 		html div 
 			class: 'row summaryChart';
-			class: 'col s10';
+			class: 'col s12';
 			with: [ self renderCategorySummaryChartOn: html for: self category ].			
 	
 	html div
